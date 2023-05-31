@@ -1,0 +1,17 @@
+{% extends base.html %}
+
+{% block title %} Favorite 5 {% endblock %}
+
+{% block header %}
+    <h1>Favorite 5 Artists %</h1>
+{% endblock %}
+
+{% block content %}
+    <h1>{{ name }}'s Favorite 5 Artists</h1>
+    <ul>
+        {% for artist in fav5 %}
+            <li>{{ artist }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
